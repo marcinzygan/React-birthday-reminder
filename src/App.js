@@ -12,9 +12,9 @@ function App() {
     <main>
       <section className="container">
         <h3>{people.length} birthdays today</h3>
-        {people.map((person) => (
-          <List key={person.id} {...person} />
-        ))}
+
+        <List people={people} />
+
         <button onClick={clearList}>clear all</button>
       </section>
     </main>
